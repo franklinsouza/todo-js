@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Todo app</title>
+</head>
+<body>
+    <div class="opacityModal">
+        <div class="addTaskModal">
+            <header>
+                <span class="closeModalBtn">x</span>
+                <input type="text" class="newTodoTitle" placeholder="Todo">
+            </header>
+            <div>
+                <ul class="subTasksList"></ul>
+            </div>
+            <footer>
+                <div class="addSubTaskLine">
+                    <input type="text" class="newSubTask" placeholder="Type your new task here..." name="">
+                    <button class="addSubTaskBtn">Create</button>
+                </div>
+    
+                <button class="addTodoBtn" title="Add todo / Save todo">+</button>
+            </footer>
+        </div>
+    </div>
+
+
+    <ul class="mainTodoList">
+        <li class="btn-create">
+            <i class="fas fa-plus"></i>
+        </li>
+    </ul>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

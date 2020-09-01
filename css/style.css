@@ -1,0 +1,201 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0C0F13;
+    color: #FAFBFC;
+    font-weight: 400;
+    padding: 40px;
+}
+* {
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+}
+p {
+    font-size: 13px;
+    color: #bdbdbd;
+ }
+ button{
+     border: none;
+ }
+.mainTodoList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainTodoList > li {
+    background-color: #121519;
+    width: 220px;
+    min-height: 205px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px 24px;
+    position: relative;
+}
+
+.mainTodoList .fa-trash {
+    position: absolute;
+    right: 19px;
+    top: 18px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.mainTodoList > li h2 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.mainTodoList > li h2,
+.mainTodoList > li ul,
+.mainTodoList > li ul li,
+.mainTodoList > li  span {
+    pointer-events: none;
+}
+.plusIcon {
+    font-size: 35px;
+}
+.barProgress {
+    width: 30px;
+    height: 30px;
+    background-color: #1B1C1E;
+    border-width: 4px;
+    border-style: solid;
+    display: block;
+    border-radius: 50%;
+    display: none;
+}
+.btn-create {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-create i{
+    font-size: 40px;
+}
+.todoThumb {
+    cursor: pointer;
+}
+/* Modal */
+.opacityModal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.7);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.addTaskModal header {
+    position: relative;
+}
+.closeModalBtn {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: #FAFBFC;
+    color: #1B1C1E;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.addTaskModal {
+    background-color: #121519;
+    width: 600px;
+    border-radius: 5px; 
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 1;
+    padding: 20px 20px 0 20px;
+}
+.addTaskModal input[type="text"] {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: #FAFBFC;
+    padding: 10px;
+    outline: none;
+}
+.addTaskModal .newTodoTitle {
+    height: 55px;
+    font-size: 25px;
+    font-weight: 700;
+}
+/* .addTaskModal footer {
+    background-color: #2D2E30;
+    padding: 20px;
+} */
+.subTasksList{
+    padding: 20px 0;
+}
+.subTasksList li {
+    display: flex;
+    margin-bottom: 1px;
+}
+.actBtn {
+    outline: none;
+}
+.actBtn i {
+    color: #FAFBFC;
+    pointer-events: none;
+}
+.checkBtn {
+    background-color: #0C0F13;
+    width: 40px;
+    cursor: pointer;
+}
+.removeBtn {
+    background-color: #F15F5F;
+    width: 40px;
+    cursor: pointer;
+}
+.addSubTaskLine {
+    background: #0C0F13;
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.addSubTaskBtn {
+    background-color: transparent;
+    color: #FAFBFC;
+    cursor: pointer;
+    padding: 10px;
+}
+.addTodoBtn {
+    background-color: #FAFBFC;
+    color: #0C0F13;
+    font-size: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 30px auto;
+    display: block;
+    cursor: pointer;
+}
+.complete input[type="text"],
+.complete p {
+    text-decoration: line-through;
+    color: #545454;
+}
+
+.addTaskModal .complete {
+    opacity: .5;
+}
+/*Colors */
+.barColor--1 {border-color: #04D5C1;}
+.barColor--2 {border-color: #796BB9;}
+.barColor--3 {border-color: #F7BB2A;}
