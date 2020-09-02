@@ -7,7 +7,7 @@ TODO LIST
 
 [//]: # (Add your gifs/images here:)
 <div>
-  <img src="https://iili.io/dtWg9e.gif" alt="demo" height="425">
+  <img src="https://iili.io/dtWg9e.gif" alt="demo">
 </div>
 
 <hr />
